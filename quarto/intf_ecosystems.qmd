@@ -1,0 +1,133 @@
+---
+title: "Integrated Findings"
+subtitle: "Ecosystem threat status and protection level"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+---
+
+### Ecosystem threat status
+
+Ecosystem threat status is an indicator of the degree to which ecosystems are still intact or alternatively losing vital aspects of their structure, function or composition. The IUCN Red List of Ecosystems (RLE) framework uses the concept of ecosystem collapse as the end point for ecosystem decline. For NBA 2025 the RLE framework was applied across all realms, where in previous NBAs the South African threat status framework (developed prior to the IUCN RLE) was applied for some realms. Ecosystem types are placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes.
+
+```{r}
+## Combined RLE plots
+#| echo: false
+##| fig-label:rle-plot
+##| fig-cap: "(A) Percentage of ecosystem types in each threat status category in each realm; (B) the percentage extent of each ecosystem in each threat status category (note for that length is used for rivers, while area is used for all other realms). In addition to the realms, the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa."
+##| fig-align: "center"
+##| fig-show: "hold"
+
+# libraries
+library(tidyverse)
+library(nbaR)
+library(grid)
+library(gridExtra)
+library(patchwork)
+
+# data
+rle_count_all <- read.csv("data/rle_count_per_realm.csv") %>% select(-X) %>% rename(`Critically Endangered` = Critically.Endangered, `Least Concern` = Least.Concern)
+rle_ext_all <- read.csv("data/rle_ext_per_realm.csv") %>% select(-X) %>% rename(`Critically Endangered` = Critically.Endangered, `Least Concern` = Least.Concern)
+
+# RLE count plot 
+rle_count_plot <- nba_plot(rle_count_all,
+                     `realm`,
+                     1:4,
+                     CHRT = "bar",
+                     NUM = TRUE,
+                     LAB = "Percentage of ecosystem types",
+                     SAVE = NULL,
+                     SCALE_TEXT = 0.6)
+
+# RLE ext plot
+rle_ext_plot <- nba_plot(rle_ext_all,
+                     `realm`,
+                     1:4,
+                     CHRT = "bar",
+                     NUM = FALSE,
+                     LAB = "Percentage of ecosystem extent",
+                     SAVE = NULL,
+                     SCALE_TEXT = 0.6)
+
+rle_combined_plot <- rle_count_plot + rle_ext_plot +
+  plot_layout(ncol = 2, guides = "collect") & 
+    theme_minimal(base_size = 10) & 
+  theme(legend.position = "bottom") 
+
+# Add (A) and (B) automatically
+rle_combined_plot <- rle_combined_plot + 
+  plot_annotation(tag_levels = 'A')
+
+# Save to file
+ggsave("outputs/rle_combined_plot.png",
+       plot = rle_combined_plot,
+       width = 18, height = 10, units = "cm", dpi = 300)
+```
+
+![Figure 1. (A) Percentage of ecosystem types in each threat status category in each realm; (B) the percentage extent of each ecosystem in each threat status category (note for that length is used for rivers, while area is used for all other realms). In addition to the realms, the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa.](outputs/rle_combined_plot.png){#fig:rle-plot}
+
+![*Figure 1. (A) Percentage of ecosystem types in each threat status category in each realm; (B) the percentage extent of each ecosystem in each threat status category (note for that length is used for rivers, while area is used for all other realms). In addition to the realms, the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa.*](outputs/rle_combined_plot.png)
+
+Wetland, river and estuarine ecosystems are threatened, with over half of the ecosystem types and ecosystem extent of rivers and wetlands listed as Critically Endangered, Endangered or Vulnerable; while for estuaries these figures are over 75% (figure 1). This reflects the poor ecological condition of wetland, river and estuarine ecosystems that are overwhelmed by a variety of compounding pressures, particularly, increasing disruptions to the hydrological regime and deteriorating water quality, with fishing being an additional pressure in estuaries. Similarly high levels of pressure are evident on the coast, with 71% of ecosystem types being threatened, comprising almost half of the coastal extent. In contrast, a relatively large proportion of marine and terrestrial ecosystem types are listed as Least Concern. This is in part due to the relatively low pressure on some ecosystem types (e.g., abyssal or remote mountain ecosystem types) and due to inadequate data on pressures in utilised ecosystem types (e.g., marine pelagic fishing and grazing pressures in the rangelands). Ecosystem assessments are updated periodically, and new information and methods of measuring risk of ecosystem collapse will inform future assessments.
+
+![Figure 2. Spatial distribution of threatened ecosystems for each realm: A, terrestrial and marine benthic; B, estuarine and marine pelagic; C, river; D, wetland; E, subantarctic territory including the Prince Edward Islands and surrounding seas. Estuaries, which are not visible at this map scale are shown as circles, scaled to the size of the estuary](images/Fig8 mockup.jpg){#fig:rle-map}
+
+Generally, ecosystem types with a limited distribution tend to be more highly threatened than extensive types – this is evident when Figure 1A and B are compared. In the marine realm, the larger remote offshore ecosystem types are generally less threatened than the smaller inshore ecosystem types; in the terrestrial realm the large ecosystem types of the Nama-Karoo are less threatened than the many small types in the Fynbos Biome (Figure 2A). The Eastern Cape estuaries (specifically along the Wild Coast) are less threatened than those on the Cape West Coast and southern KwaZulu-Natal (Figure 2B), reflecting the condition of their catchments. The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally less threatened than other regions of the country (Figure 2C). Wetlands of the interior Highveld, along the Escarpment and the southwestern Cape are the most threatened (Figure 2D). In the marine realm, the Southern Benguela ecoregion has more threatened ecosystems than the Agulhas ecoregion, and most of the threatened ecosystem types in the Natal–Delagoa ecoregion are concentrated in the KwaZulu-Natal Bight (Figure 2A).
+
+### Ecosystem protection level
+
+Ecosystem protection level measures the degree to which ecosystem types are represented in the protected area network. The indicator was developed in South Africa and has been used as a headline indicator in national reporting since 2005. Ecosystem types are assigned to one of four categories based on a set of predefined targets ranging from 16 to 32% (linked to the extent and condition of types within protected areas). Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP).
+
+Wetlands and rivers have the lowest overall protection levels of any realm, with over 80% of ecosystem types categorised as Poorly Protected or Not Protected (referred to as under protected) (Figure 3). This is driven in part by the poor ecosystem condition of some freshwater ecosystems (only intact or moderately modified ecosystem extent contributes fully to the ecosystem targets). A high proportion of estuarine ecosystem types have some level of protection, but very few are considered Well Protected. Protecting estuaries is challenging, given the range of pressures that can impact them directly and their upstream catchment areas. Marine protection improved dramatically in 2018/2019 with the declaration of 20 new Marine Protected Areas – this translates into higher levels of protection within the marine realm when compared to the terrestrial realm. The marine realm has a small number of large ecosystem types that are under protected and this results in a difference between the percentage of types in each category (Figure 3A) and the extent of each category (Figure 3B).
+
+```{r}
+## Combined EPL plots
+#| echo: false
+##| fig-label: epl-plot
+##| fig-cap: "(A), the percentage of ecosystem types in each protection level category in each realm, (B), the percentage extent in each category in each realm (for rivers length is used as the unit of extent, for all other realms area is used). In addition to the realms the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa."
+##| fig-align: "center"
+##| fig-show: "hold"
+
+# data
+epl_count_all <- read.csv("data/epl_count_per_realm.csv") %>% select (-X) %>% rename(`Well Protected` = Well.Protected, `Moderately Protected` = Moderately.Protected, `Poorly Protected` = Poorly.Protected, `Not Protected` = Not.Protected)
+epl_ext_all <- read.csv("data/epl_ext_per_realm.csv") %>% select (-X) %>% rename(`Well Protected` = Well.Protected, `Moderately Protected` = Moderately.Protected, `Poorly Protected` = Poorly.Protected, `Not Protected` = Not.Protected)
+
+# RLE count plot 
+epl_count_plot <- nba_plot(epl_count_all,
+                     `realm`,
+                     1:4,
+                     CHRT = "bar",
+                     NUM = TRUE,
+                     LAB = "Percentage of ecosystem types",
+                     SAVE = NULL,
+                     SCALE_TEXT = 0.6)
+
+# RLE ext plot
+epl_ext_plot <- nba_plot(epl_ext_all,
+                     `realm`,
+                     1:4,
+                     CHRT = "bar",
+                     NUM = FALSE,
+                     LAB = "Percentage of ecosystem extent",
+                     SAVE = NULL,
+                     SCALE_TEXT = 0.6)
+
+epl_combined_plot <- epl_count_plot + epl_ext_plot +
+  plot_layout(ncol = 2, guides = "collect") & 
+    theme_minimal(base_size = 10) & 
+  theme(legend.position = "bottom") 
+
+# Add (A) and (B) automatically
+epl_combined_plot <- epl_combined_plot + 
+  plot_annotation(tag_levels = 'A')
+
+# Save to file
+ggsave("outputs/epl_combined_plot.png",
+       plot = epl_combined_plot,
+       width = 18, height = 10, units = "cm", dpi = 300)
+```
+
+![Figure 3. (A), the percentage of ecosystem types in each protection level category in each realm, (B), the percentage extent in each category in each realm (for rivers length is used as the unit of extent, for all other realms area is used). In addition to the realms the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa.](outputs/epl_combined_plot.png){#fig:epl-plot}
+
+The spatial patterns of protection level reflect the geography of the protected area network: terrestrial ecosystem types around large national parks (e.g., Kruger National Park in the northeast of the country) are Well Protected (Figure 4A). Under-protected regions on the mainland include the grasslands of the Free State and interior of the Eastern Cape, and the Nama Karoo. Other gaps in the protected area network are evident in the offshore eastern portion of the marine realm, the southern Eastern Cape coast and the Northern Cape coast (Figure 4A, B). Most coastal ecosystem types are represented in protected areas, although only a quarter of the extent is Well or Moderately Protected. The Prince Edward Islands Marine Protected Area in South Africa’s subantarctic territory provides protection to most ecosystem types, with almost half the types being Well Protected, however, these comprise a small portion of the territory.
+
+![Figure 4. Spatial distribution of ecosystem protection level for each realm: A, terrestrial and marine benthic; B, estuarine and marine pelagic; C, river; D, wetland; E, subantarctic territory including the Prince Edward Islands and surrounding seas. Estuaries, which are not visible at this map scale, are shown as circles, scaled to the size of the estuary.](images/Fig 15 mockup.jpg){#fig:epl-map}
