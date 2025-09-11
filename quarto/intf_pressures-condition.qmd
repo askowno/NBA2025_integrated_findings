@@ -9,7 +9,7 @@ title-block-banner-color: white
 
 The International Union for the Conservation of Nature (IUCN) proposes a threats classification scheme with a hierarchical structure for various pressures on biodiversity. The NBA 2025 adopted this approach with some minor language changes. Figure 1 is for the realms, coast and Subantarctic, and Figure 2 is for taxonomic groups.
 
-![Figure 1. Key pressures on biodiversity in each realm, informed by Red List of Threatened Species and Red List of Ecosystems assessments. The size of the bubbles indicates the relative importance of each pressure class.](images/Fig_4-01.png){width="12cm"}
+![Figure 1. Key pressures on biodiversity in each realm, informed by Red List of Threatened Species and Red List of Ecosystems assessments. The size of the bubbles indicates the relative importance of each pressure class.](images/Fig_4-01.png){fig-align="left" width="12cm"}
 
 In the estuarine and marine realms, and in coastal areas, **unsustainable use of biological resources** (in this case overfishing of key species, along with associated impacts on non-target species) is a significant pressure on biodiversity.  There is increasing illegal harvesting and trade of numerous high value species in the terrestrial and aquatic realms, with population declines and near extinction of several species. Overuse of rangelands, which results in loss of shrub and herbaceous cover and leads to increased erosion, is a direct pressure to terrestrial species and ecosystems and an indirect pressure on freshwater ecosystems.
 
@@ -35,6 +35,8 @@ The marine and terrestrial realms are similar in terms of their relatively high 
 
 In stark contrast, freshwater wetlands and rivers, as well as estuaries, are predominantly heavily modified, and in poor ecological condition. These realms are geographically constrained, and pressures tend to concentrate. Only 19% of estuarine area, 49% of wetland area and 25% of river length are considered to be in natural/near-natural condition. Coastal biodiversity is also under particularly high pressure and less than half of the ecologically determined coastal zone remains in a natural/near-natural condition.
 
-![](images/Fig%206%20map.png){width="12cm"}
+::: {layout="[1,1]"}
+![](images/Fig%206%20map.png)
 
-![Figure 3. Ecological condition map (terrestrial and marine). The legend shows the categories used across the different realms. Present Ecological State (PES) for freshwater and estuarine, severity of disruption of ecosystem function (IUCN Red List of Ecosystems) and NBA ecological condition categories.](images/clipboard-184907390.png){width="10cm"}
+![Figure 3. Ecological condition map (terrestrial and marine). The legend shows the categories used across the different realms. Present Ecological State (PES) for freshwater and estuarine, severity of disruption of ecosystem function (IUCN Red List of Ecosystems) and NBA ecological condition categories.](images/clipboard-184907390.png)
+:::

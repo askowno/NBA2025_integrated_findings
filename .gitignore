@@ -28,3 +28,6 @@ quarto/*.html
 quarto/**/*.html
 quarto/**/libs
 quarto/**/figure-html
+.Rproj.user
+
+/.quarto/
