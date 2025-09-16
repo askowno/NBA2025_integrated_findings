@@ -11,8 +11,8 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 ### The IUCN Red List of Ecosystems Framework
 
 |  |  |
-|----------------------------------------------|:------------------------:|
-| The RLE is a framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](images/RLE logo new.png){width="110"} |
+|----|:--:|
+| The RLE is a framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](images/RLE%20logo%20new.png){width="110"} |
 
 1.  can be applied systematically across realms and geographic areas;
 
@@ -49,3 +49,9 @@ Data availability to assess all the criteria differs per realm. Therefore, the f
 | Inland wetlands | Criteria A2b, A3, B1, B2, D3 |
 | Estuaries       | Criteria A2b, A3, B3, D1, D3 |
 | Marine          | Criteria A3, B1, B2, C3, D3  |
+
+### RLE calculation methods
+
+Details of the RLE calculations per realm can be accessed here:
+
+link to RLE_terr git repo
