@@ -25,7 +25,7 @@ The fifteen key messages of NBA 2025 highlight a range of actions that can be su
 
 7.  **Innovative financing and resource mobilisation (all key messages, see C3):** Current financial flows are insufficient for South Africa’s ambitious biodiversity targets. It is essential to ensure that the baseline funding for biodiversity is not eroded while exploring new sources. There is urgent need for coordinated action to scale up innovative public and private financing mechanisms. Blended finance models, biodiversity offsets, green bonds, and other nature-positive finance solutions can help bridge this funding gap, while partnerships with the private sector and development finance institutions can unlock considerable additional capital. Strategic resource allocation and measurable outcomes depend on investment in robust financial tracking systems, natural capital accounting, and transparent reporting.
 
-![Figure 1. South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level. ](images/Figure 20 mockup.png){width="600"}
+![Figure 1. South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level.](images/Figure%2020%20mockup.png){width="600"}
 
 ## The framing of action, response and intervention plans
 
@@ -35,7 +35,7 @@ At the global level, the Kunming-Montreal Global Biodiversity Framework sets 23 
 
 National initiatives include South Africa’s National Development Plan’s 2030 and SANParks’ ‘Vision 2040’ which reimagines the role of conservation as a catalyst of redress, economic advancement and job creation through the Mega Living Landscapes. Furthermore, South Africa’s National Biodiversity Strategy and Action Plan (NBSAP) is being updated around four strategic dimensions: i) conservation (including formal protection, stewardship, OECMs, and targeted species efforts); ii) enhancing nature’s contributions to people (including inclusivity in the biodiversity economy); iii) mainstreaming biodiversity (across all sectors and levels of government and society); and iv) resource mobilisation (innovative, sustainable, and diversified strategies).
 
-There are also many local, district and provincial-level initiatives under which actions, responses and interventions can be framed. South Africa has limited resources to implement these plans, and must capitalise on past successes, existing initiatives and strategic innovation to meet national targets for both biodiversity and development. The NBA can guide these initiatives and provide a wealth of data products to support decision-making. \
+There are also many local, district and provincial-level initiatives under which actions, responses and interventions can be framed. South Africa has limited resources to implement these plans, and must capitalise on past successes, existing initiatives and strategic innovation to meet national targets for both biodiversity and development. The NBA can guide these initiatives and provide a wealth of data products to support decision-making.\
 
 ## Reflecting on twenty years since the first NBA
 
