@@ -1,6 +1,6 @@
 ---
-title: "Integrated Findings"
-subtitle: "Ecosystem threat status and protection level"
+title: "Ecosystem Threat Status and Protection Level"
+subtitle:  "Integrated Findings"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---

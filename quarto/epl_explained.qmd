@@ -1,5 +1,5 @@
 ---
-title: "Ecosystem protection level"
+title: "Ecosystem Protection Level"
 subtitle: "General introduction to the indicator"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white

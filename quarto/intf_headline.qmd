@@ -1,6 +1,6 @@
 ---
-title: "Integrated Findings"
-subtitle: "Headline Indicators"
+title: "Headline Indicators"
+subtitle: "Integrated Findings"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Integrated Findings"
-subtitle: "Pressures and ecological condition"
+title: "Pressures and Ecological Condition" 
+subtitle: "Integrated Findings"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
