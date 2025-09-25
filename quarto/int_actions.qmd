@@ -7,6 +7,8 @@ title-block-banner-color: white
 
 The NBA reports on the state of South Africa’s biodiversity, accounting for the various pressures affecting ecosystems, species and genetic diversity. This approach reveals potential avenues through which pressures on biodiversity can be reduced and biodiversity conservation outcomes and sustainable resource management may be improved. Each key message in the NBA makes a ‘call to action’ that addresses the particular finding and identifies specific interventions that could be considered. Through this process, the NBA contributes to the body of knowledge that enables the multitude of stakeholders to co-develop, through participatory whole-of-society and whole-of-government approaches, the various policy responses and detailed action and implementation plans required for the benefit of both biodiversity and people.
 
+![Figure 1. South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level.](images/Figure%2020%20mockup.png){alt="Figure 1. South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level." width="600"}
+
 ## Seven broad themes for action
 
 The fifteen key messages of NBA 2025 highlight a range of actions that can be summarised into seven broad themes:
@@ -24,8 +26,6 @@ The fifteen key messages of NBA 2025 highlight a range of actions that can be su
 6.  **Data collection and monitoring (key messages A1, A3, A4, A5, B3, B5, C2):** Effective biodiversity monitoring depends on continuous long-term data collection and analysis. Without this foundation, biodiversity inclusive spatial planning and biodiversity assessments are compromised. Interventions to mitigate pressures on biodiversity must be planned using the best possible data to ensure return on investment. Measuring impact through targeted data collection and monitoring enables adaptive management of current projects, informs future project improvements, supports meaningful reporting, and contributes to national datasets.
 
 7.  **Innovative financing and resource mobilisation (all key messages, see C3):** Current financial flows are insufficient for South Africa’s ambitious biodiversity targets. It is essential to ensure that the baseline funding for biodiversity is not eroded while exploring new sources. There is urgent need for coordinated action to scale up innovative public and private financing mechanisms. Blended finance models, biodiversity offsets, green bonds, and other nature-positive finance solutions can help bridge this funding gap, while partnerships with the private sector and development finance institutions can unlock considerable additional capital. Strategic resource allocation and measurable outcomes depend on investment in robust financial tracking systems, natural capital accounting, and transparent reporting.
-
-![Figure 1. South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level.](images/Figure%2020%20mockup.png){width="600"}
 
 ## The framing of action, response and intervention plans
 
