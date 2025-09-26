@@ -1,5 +1,5 @@
 ---
-title: "Pressures and Ecological Condition" 
+title: "Pressures on Biodiversity" 
 subtitle: "Integrated Findings"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
