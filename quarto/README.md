@@ -1,17 +1,15 @@
 ### Website content for NBA2025
 
-AL Skowno & LR Harris
+AL Skowno
 
 September 2025
 
-#### Integrated finding directly from the booklet
-
-Headline indicators graphic and text: intf_headline.qmd
-
-Pressures and Condition across all reams including bubble plots and overall condition map: intf_pressures-condition.qmd
-
-Ecosystem findings across all realms (RLE EPL and unluckies) : intf_ecosystems.qmd
-
-Explanation page for RLE : rle_explained.qmd
-
-Explanation page for EPL : epl_explained.qmd
+| Part | Chapter | Page Header | QMD | Description |
+|--------|----------------------------------------|--------|--------|--------|
+| Integrated Findings | Headline Indicators | Headline Indicators : Integrated Findings | **intf_headline.qmd** | Headline indicators - from booklet - verbatim |
+|  | Headline Indicators | Ecosystem Assessments : Integrated Findings | **intf_ecosystems.qmd** | Ecosystem results (ETS, EPL, unlucky) - from booklet -verbatim |
+|  | Headline Indicators | Ecosystem Threat Status and the Red List of Ecosystems : General introduction to the indicator | **rle_explained.qmd** | child page explaining ETS and RLE indicator |
+|  | Headline Indicators | Ecosystem Protection Level : General introduction to the indicator | **epl_explained.qmd** | child page explaining EPL indicator |
+|  | Pressures on Biodiversity | Pressures on Biodiversity : Integrated Findings | **intf_pressures-condition.qmd** | Pressures on Biodiversity (including overall bubble plots for sp and ecosystems), and ecosystem condition map and legend. - from booklet - verbatim |
+| Priority Actions and Gaps | Priority Actions, Responses and Interventions | Priority Actions, Responses and Interventions | **int_actions.qmd** | Priority actions (list of 7) - from booklet - verbatim |
+|  | Knowledge Gaps and Research Priorities | Knowledge Gaps and Research Priorities | **int_gaps.qmd** | Table - from booklet - verbatim |
