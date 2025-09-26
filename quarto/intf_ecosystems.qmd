@@ -7,16 +7,12 @@ title-block-banner-color: white
 
 ### Ecosystem threat status
 
-Ecosystem threat status is an indicator of the degree to which ecosystems are still intact or alternatively losing vital aspects of their structure, function or composition. The IUCN Red List of Ecosystems (RLE) framework uses the concept of ecosystem collapse as the end point for ecosystem decline. For NBA 2025 the RLE framework was applied across all realms, where in previous NBAs the South African threat status framework (developed prior to the IUCN RLE) was applied for some realms. Ecosystem types are placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes. \[**ADD LINKS TO RLE EXPLAINED PAGES rle_explained.qmd**\]
+Ecosystem threat status is an indicator of the degree to which ecosystems are still intact or alternatively losing vital aspects of their structure, function or composition. The IUCN Red List of Ecosystems (RLE) framework uses the concept of ecosystem collapse as the end point for ecosystem decline. For NBA 2025 the RLE framework was applied across all realms, where in previous NBAs the South African threat status framework (developed prior to the IUCN RLE) was applied for some realms. Ecosystem types are placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes. **ADD LINKS TO RLE EXPLAINED PAGES. rle_explained.qmd**
 
 ```{r}
 ## Combined RLE plots
 #| echo: false
 #| warning: false
-##| fig-label: rle-plot
-##| fig-cap: "(a) Percentage of ecosystem types in each threat status category in each realm; (b) the percentage extent of each ecosystem in each threat status category (note for that length is used for rivers, while area is used for all other realms). In addition to the realms, the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa."
-##| fig-align: "center"
-##| fig-show: "hold"
 
 # libraries
 library(tidyverse)
@@ -49,13 +45,13 @@ SAVE = NULL)
 # Save to file because auto caption is not working for this grid object  
 ggsave("imgs/rle_combined_plot.png",
        plot = rle_combined_plot,
-       width = 18, height = 10, units = "cm", dpi = 72)
+       width = 18, height = 10, units = "cm", dpi = 220)
 
 ```
 
 ![Figure 1. (a) Percentage of ecosystem types in each threat status category in each realm; (b) the percentage extent of each ecosystem in each threat status category (note for that length is used for rivers, while area is used for all other realms). In addition to the realms, the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa.](imgs/rle_combined_plot.png)
 
-Wetland, river and estuarine ecosystems are threatened, with over half of the ecosystem types and ecosystem extent of rivers and wetlands listed as Critically Endangered, Endangered or Vulnerable; while for estuaries these figures are over 75% (figure 1). This reflects the poor ecological condition of wetland, river and estuarine ecosystems that are overwhelmed by a variety of compounding pressures, particularly, increasing disruptions to the hydrological regime and deteriorating water quality, with fishing being an additional pressure in estuaries. Similarly high levels of pressure are evident on the coast, with 71% of ecosystem types being threatened, comprising almost half of the coastal extent. In contrast, a relatively large proportion of marine and terrestrial ecosystem types are listed as Least Concern. This is in part due to the relatively low pressure on some ecosystem types (e.g., abyssal or remote mountain ecosystem types) and due to inadequate data on pressures in utilised ecosystem types (e.g., marine pelagic fishing and grazing pressures in the rangelands). Ecosystem assessments are updated periodically, and new information and methods of measuring risk of ecosystem collapse will inform future assessments.
+Wetland, river and estuarine ecosystems are threatened, with over half of the ecosystem types and ecosystem extent of rivers and wetlands listed as Critically Endangered, Endangered or Vulnerable; while for estuaries these figures are over 75% (Figure 1). This reflects the poor ecological condition of wetland, river and estuarine ecosystems that are overwhelmed by a variety of compounding pressures, particularly, increasing disruptions to the hydrological regime and deteriorating water quality, with fishing being an additional pressure in estuaries. Similarly high levels of pressure are evident on the coast, with 71% of ecosystem types being threatened, comprising almost half of the coastal extent. In contrast, a relatively large proportion of marine and terrestrial ecosystem types are listed as Least Concern. This is in part due to the relatively low pressure on some ecosystem types (e.g., abyssal or remote mountain ecosystem types) and due to inadequate data on pressures in utilised ecosystem types (e.g., marine pelagic fishing and grazing pressures in the rangelands). Ecosystem assessments are updated periodically, and new information and methods of measuring risk of ecosystem collapse will inform future assessments.
 
 ![Figure 2. Spatial distribution of threatened ecosystems for each realm: (A) terrestrial and marine benthic; (B) estuarine and marine pelagic; (C) river; (D) wetland; (E) subantarctic territory including the Prince Edward Islands and surrounding seas. Estuaries, which are not visible at this map scale are shown as circles, scaled to the size of the estuary](imgs/Fig8%20mockup.jpg){#fig:rle-map width="800"}
 
@@ -70,10 +66,6 @@ Wetlands and rivers have the lowest overall protection levels of any realm, with
 ```{r}
 ## Combined EPL plots
 #| echo: false
-##| fig-label: epl-plot
-##| fig-cap: "(a), the percentage of ecosystem types in each protection level category in each realm, (b), the percentage extent in each category in each realm (for rivers length is used as the unit of extent, for all other realms area is used). In addition to the realms the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa."
-##| fig-align: "center"
-##| fig-show: "hold"
 
 # data
 epl_count_all <- read.csv("data/epl_count_per_realm.csv") %>% select (-X) %>% rename(`Well Protected` = Well.Protected, `Moderately Protected` = Moderately.Protected, `Poorly Protected` = Poorly.Protected, `Not Protected` = Not.Protected)
@@ -99,7 +91,7 @@ SAVE = NULL)
 # Save to file
 ggsave("imgs/epl_combined_plot.png",
        plot = epl_combined_plot,
-       width = 18, height = 10, units = "cm", dpi = 72)
+       width = 18, height = 10, units = "cm", dpi = 220)
 ```
 
 ![Figure 3. (a) Percentage of ecosystem types in each protection level category in each realm, (b) the percentage extent in each category in each realm (for rivers length is used as the unit of extent, for all other realms area is used). In addition to the realms the plot also shows results for the coastal zone, made up of estuaries and selected marine and terrestrial types, and the subantarctic territory of South Africa.](imgs/epl_combined_plot.png){#fig:epl-plot}
