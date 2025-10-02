@@ -5,7 +5,7 @@ AL Skowno
 September 2025
 
 | Part | Chapter | Page Header | QMD | Description |
-|--------|----------------------------------------|--------|--------|--------|
+|----|----|----|----|----|
 | Integrated Findings | Headline Indicators | Headline Indicators : Integrated Findings | **intf_headline.qmd** | Headline indicators - from booklet - verbatim |
 |  | Headline Indicators | Ecosystem Assessments : Integrated Findings | **intf_ecosystems.qmd** | Ecosystem results (ETS, EPL, unlucky) - from booklet -verbatim |
 |  | Headline Indicators | Ecosystem Threat Status and the Red List of Ecosystems : General introduction to the indicator | **rle_explained.qmd** | child page explaining ETS and RLE indicator |
